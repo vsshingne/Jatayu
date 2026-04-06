@@ -1,0 +1,22 @@
+# Core dependencies for drone garbage detection system
+# Updated for Python 3.13 compatibility
+opencv-python>=4.9.0
+numpy>=1.26.0
+ultralytics>=8.0.196
+firebase-admin>=6.2.0
+Pillow>=10.0.1
+gpxpy>=1.6.2
+
+# Additional utilities
+python-dateutil>=2.8.2
+requests>=2.31.0
+tqdm>=4.66.1
+
+# Optional: For better performance (use compatible versions)
+# torch>=2.1.0
+# torchvision>=0.16.0
+
+# Development dependencies (optional)
+# pytest>=7.4.2
+# black>=23.9.1
+# flake8>=6.1.0 

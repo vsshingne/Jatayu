@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['garbage']
+
+roboflow:
+  workspace: garbage-detection-czeg5
+  project: garbage_detection-wvzwv
+  version: 18
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/garbage-detection-czeg5/garbage_detection-wvzwv/dataset/18

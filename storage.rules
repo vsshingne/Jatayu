@@ -1,0 +1,25 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    // Allow read/write access to all files
+    // This is for testing purposes - should be restricted in production
+    match /{allPaths=**} {
+      allow read, write: if true;
+    }
+    
+    // Garbage images
+    match /garbage_images/{imageId} {
+      allow read, write: if true;
+    }
+    
+    // Profile images
+    match /profile_images/{imageId} {
+      allow read, write: if true;
+    }
+    
+    // Profile pictures
+    match /profile_pics/{imageId} {
+      allow read, write: if true;
+    }
+  }
+} 

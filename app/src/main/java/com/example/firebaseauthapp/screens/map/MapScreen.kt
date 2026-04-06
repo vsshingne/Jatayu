@@ -66,7 +66,8 @@ fun MapScreen(focusLat: Double? = null, focusLng: Double? = null) {
         }
     }
 
-    // Get current location only if permission is granted
+    // Get current location only if permission is granted 
+    
     LaunchedEffect(locationPermissionState.status.isGranted) {
         if (locationPermissionState.status.isGranted) {
             val fusedLocationClient = com.google.android.gms.location.LocationServices.getFusedLocationProviderClient(context)
